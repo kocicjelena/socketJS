@@ -12,7 +12,7 @@ var app = http.createServer(function (req, res) {
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		res.end(html);
 	}
-}).listen(port, 'https://kocicjelena.github.io/socketJS/');
+}).listen(3000, 'https://kocicjelena.github.io/socketJS/');
 
 /******************** Socket.io */
 
