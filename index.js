@@ -1,8 +1,8 @@
 var http = require('http'),
 	fs = require('fs'),
 	port = 3000,
-	html = fs.readFileSync(__dirname + '/html/page.html', {encoding: 'utf8'}),
-	css = fs.readFileSync(__dirname + '/css/styles.css', {encoding: 'utf8'});
+	html = fs.readFileSync(__dirname + 'https://kocicjelena.github.io/socketJS/page.html', {encoding: 'utf8'}),
+	css = fs.readFileSync(__dirname + 'https://kocicjelena.github.io/socketJS/styles.css', {encoding: 'utf8'});
 
 var app = http.createServer(function (req, res) {
 	if(req.url === '/styles.css') {
@@ -12,7 +12,7 @@ var app = http.createServer(function (req, res) {
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		res.end(html);
 	}
-}).listen(port, '127.0.0.1');
+}).listen(port, 'https://kocicjelena.github.io/socketJS/');
 
 /******************** Socket.io */
 
